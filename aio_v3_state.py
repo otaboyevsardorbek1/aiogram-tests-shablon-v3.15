@@ -22,7 +22,7 @@ from aiogram.types import (
     ReplyKeyboardRemove,
 )
 
-TOKEN ='8183549397:AAHy3nETk7Zn7cJlzHUVX84fzqCWZf_zGC4'
+TOKEN ='7552988744:AAFF1U_dEtU6LYNVYiw_9Tw3COutD6FmbDE'
 
 form_router = Router()
 

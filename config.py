@@ -8,6 +8,7 @@ ADMIN_USERNAME=['@prodevuzoff','@Elyor_Xujamberdiyev']
 DB_TYPES='sqlite:///' # db configurate taype
 DB_PATH = "bot.db"
 
+
 # bot loger config file
 LOG_FILE = "bot.log"
 MAX_LOG_SIZE_MB=32
