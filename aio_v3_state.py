@@ -138,7 +138,7 @@ async def show_summary(message: Message, data: Dict[str, Any], positive: bool = 
     text += (
         f"Siz {html.quote(language)}  dasturlash tilida aiogram v3.15 versiyasida botlar yozishni yoqtirarsiz."
         if positive
-        else "you don't like to write bots, so sad..."
+        else "siz botni yoqtirmaysiz, lekin bu ham yaxshi, chunki har kimning o`z fikri bor."
     )
     await message.answer(text=text, reply_markup=ReplyKeyboardRemove())
 
