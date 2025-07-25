@@ -11,8 +11,8 @@ from aiogram.types import Message
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 # 1. Konfiguratsiya
-BOT_TOKEN = "YOUR_BOT_TOKEN"
-ADMIN_ID = 123456789  # o'z Telegram ID'ingizni qo'ying
+BOT_TOKEN = "7552988744:AAFF1U_dEtU6LYNVYiw_9Tw3COutD6FmbDE"
+ADMIN_ID = 6646928202  # o'z Telegram ID'ingizni qo'ying
 
 # 2. DB tayyorlash
 DATABASE_URL = "sqlite+aiosqlite:///./users.db"
@@ -121,7 +121,7 @@ async def main():
     # Fon vazifani ishga tushiramiz
     asyncio.create_task(notify_task())
     # Dispatcher polling
-    await dp.start_polling(bot)
+    await dp.start_polling(bot,timeout=30,HANDLE_SIGINT=True, HANDLE_SIGTERM=True)
 
 if __name__ == "__main__":
     asyncio.run(main())
