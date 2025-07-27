@@ -129,7 +129,7 @@ async def process_language(message: Message, state: FSMContext) -> None:
         )
 
     await show_summary(message=message, data=data)
-
+    await state.clear()
 
 async def show_summary(message: Message, data: Dict[str, Any], positive: bool = True) -> None:
     name = data["name"]

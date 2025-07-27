@@ -128,7 +128,7 @@ async def send_log(message: types.Message):
         log.info(f"Log fayilini: {full_name} <--> username: {username} olishga urindi")
         await message.answer("🚫 Siz bu buyruqni ishlata olmaysiz!")
 
-
+ 
 # ✅ Log fayl hajmini tekshirish va avtomatik yuborish
 async def check_log_file():
     if os.path.exists(LOG_FILE):
